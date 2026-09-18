@@ -36,7 +36,15 @@ while True:
     except:
         print("That's not a number!")
 
-while True: 
-    try:
 
-    smth = str(f"Your utilities are {} and that is {} of your income")
+print(f"Your rent is ${rent:.2f} and that is {int(rent/income*100)}% of your income.")
+
+print(f"Your utilities are ${utilities:.2f} and that is {int(utilities/income*100)}% of your income.")
+
+print(f"Your groceries are ${groceries:.2f} and that is {int(groceries/income*100)}% of your income.")
+
+print(f"Your transportation is ${transportation:.2f} and that is {int(transportation/income*100)}% of your income.")
+
+print(f"You should save ${income/10:.2f} a month, that is 10% of your income.")
+
+print(f"You have ${income-rent-utilities-groceries-transportation-income/10:.2f} of spending money each month!")
