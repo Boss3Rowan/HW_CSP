@@ -10,10 +10,8 @@ number = False
 symbol = False
 
 
-for letter in password:
-    if(len(password)) >= 8:
-        characters = True 
-    print("At least 8 characters: ")
+if len(password) >= 8:
+    characters = True
 
 for letter in password:
     if letter.isupper():
@@ -31,8 +29,13 @@ for letter in password:
 if letter in "!?@$#&":
     symbol = True
 
-if password is strong:
-    print("Good job!")
-else:
-    print("To make it strong, add: ")
+
+
+print(f"At least 8 characters: {characters}")
+print(f"Has an uppercase letter: {uppercase}")
+print(f"Has a lowercase letter: {lowercase}")
+print(f"Has a number: {number}")
+print(f"Has a symbol: {symbol}")
+print(f"Your password strength is: {symbol}")
+print("To make it strong, add: ")
     
