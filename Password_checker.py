@@ -37,25 +37,45 @@ print(f"Has a lowercase letter: {lowercase}")
 print(f"Has a number: {number}")
 print(f"Has a symbol: {symbol}")
 
+# score
 score = 0
-if len(password) <2:
-    score = 2
-else:
-    feedback = feedback+()
-if len(password) >= 4:
-    score = 4
+if characters:
+    score += 1
 
-if len(password) == 5:
-    score = 5
+if uppercase:
+    score += 1
+    
+if lowercase:
+    score += 1
 
-if score == 2:
+if number:
+    score += 1
+
+if symbol:
+    score += 1
+   
+# strength
+if score >= 2:
     print("Your password strength is: weak")
-
-if score == 4:
+elif score <= 4:
     print("Your password strength is: medium")
-
-if score == 5:
+else:
     print("Your password strength is: strong")
 
-print("To make it strong, add: ")
-    
+# Feedback
+print("To make it stronger, add: ")
+
+if not characters:
+    print("- At least 8 characters")
+
+if not uppercase:
+    print("- An uppercase letter")
+
+if not lowercase:
+    print("- A lowercase letter")
+
+if not number:
+    print("- A number")
+
+if not symbol:
+    print("- A symbol")
