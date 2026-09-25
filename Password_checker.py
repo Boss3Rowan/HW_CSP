@@ -26,8 +26,9 @@ for letter in password:
     if letter.isnumeric():
         number = True
 
-if letter in "!?@$#&":
-    symbol = True
+for letter in password:
+    if letter in "!?@$#&":
+        symbol = True
 
 
 
