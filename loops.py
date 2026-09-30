@@ -45,4 +45,3 @@ for num in range(1,25):
     else:
         print(num)
 
-        
