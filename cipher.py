@@ -7,7 +7,10 @@ message = input("Enter your message: ")
 shift = input("Enter a shift amount: ")
 
 for letter in message:
-    print(message)
-    if shift in range(1,26):
+    if letter is letter:
+        
+        letter.isnumeric():       
+        print(letter)
+
         
  
