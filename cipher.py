@@ -4,13 +4,13 @@
 
 encrypt = input("Whould you like to (E)ncrypt or (D)ecrypt a message? ")
 message = input("Enter your message: ")
-shift = input("Enter a shift amount: ")
+shift = float(input("Enter your message: "))
+
+
 
 for letter in message:
-    if letter is letter:
-        
-        letter.isnumeric():       
+    if letter.isalpha():
+        letter = ord(letter)      
+        letter += shift
         print(letter)
-
-        
  
