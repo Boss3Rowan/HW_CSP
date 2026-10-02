@@ -1,0 +1,55 @@
+# HW, 7th, Hangman
+import random
+#Create a list of 10 words on a seperate txt file
+list = ("")
+print(random.choice(list))
+# Create another file holds win/loss counts
+
+# Use split(",") on the content of the words txt document to create your list of words
+
+# Pull win and lose totals from the other txt file and save them as 2 seperate variables
+
+# Build the hangman game
+
+# Save the correct word as a variable random.choise(name of the list)
+# number of wrong guesses --> start at 0
+# What letters have been guessed --> start []
+
+
+# Function to display the hangman (needs number of wrong guesses)
+"""
+    _______
+    |     |
+    |     O
+    |    /|\
+    |    / \
+    |________
+"""
+# Function to show the letters and spaces (The correct word, letters that have been guessed)
+# Variable for display word (starts as an empty string)
+
+# Loop over the correct word
+    # check if letter has been guesses
+      # Then add the letter to the display word
+    #if they haven't guessed the letter
+        #Add an underscore to the display word
+#Return the finished display word (outside of the loop)
+
+# Main game loop (While True)
+    # call function to show hangman
+    #print function call to show display word
+    #create variable and ask user to guess a letter
+    #add the letter to list of guessed letters
+    #check if not letter in word:
+        #increase incorect guesses
+    #check if (display word)#call function is same as the word
+        #Tell user they won!
+        #increase win total
+        #ask if they want to play again
+            #reset random word, rest wrong guess count, (guessed letters)
+    #Check to see if they lost (if they have 6 wrong guesses)
+        #Tell them they lost
+        #Tell them what the word was
+        #Increase the lost count
+        #ask if they want to play again
+        
