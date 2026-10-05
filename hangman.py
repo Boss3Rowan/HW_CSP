@@ -2,19 +2,24 @@
 import random
 #Create a list of 10 words on a seperate txt file
 list = ("")
-print(random.choice(list))
+print(random.choice(list)) 
 # Create another file holds win/loss counts
-
+with open("score.txt", "r") as file:
+    score = file.read().split(",")
 # Use split(",") on the content of the words txt document to create your list of words
-
+with open("hang.txt","r") as file:
+    words = file.read().split(",")
 # Pull win and lose totals from the other txt file and save them as 2 seperate variables
 
 # Build the hangman game
 
 # Save the correct word as a variable random.choise(name of the list)
-# number of wrong guesses --> start at 0
-# What letters have been guessed --> start []
 
+# number of wrong guesses --> start at 0
+guess == 0
+guess += score
+# What letters have been guessed --> start []
+print(guesses)
 
 # Function to display the hangman (needs number of wrong guesses)
 """
@@ -44,12 +49,18 @@ print(random.choice(list))
         #increase incorect guesses
     #check if (display word)#call function is same as the word
         #Tell user they won!
+        print("Congradulations! You won!!!")
         #increase win total
+        score += 1
         #ask if they want to play again
+        print("Would you like to play again?")
             #reset random word, rest wrong guess count, (guessed letters)
     #Check to see if they lost (if they have 6 wrong guesses)
+    if score == -6:
+     
         #Tell them they lost
         #Tell them what the word was
         #Increase the lost count
         #ask if they want to play again
+
         
