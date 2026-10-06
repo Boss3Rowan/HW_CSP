@@ -14,12 +14,12 @@ with open("hang.txt","r") as file:
 # Build the hangman game
 
 # Save the correct word as a variable random.choise(name of the list)
-
+  answer = random.choise(list)
 # number of wrong guesses --> start at 0
 guess == 0
 guess += score
 # What letters have been guessed --> start []
-print(guesses)
+print(guess)
 
 # Function to display the hangman (needs number of wrong guesses)
 """
@@ -32,14 +32,16 @@ print(guesses)
 """
 # Function to show the letters and spaces (The correct word, letters that have been guessed)
 # Variable for display word (starts as an empty string)
-
+display("")
 # Loop over the correct word
-    # check if letter has been guesses
+    # check if letter has been guessed
+    if letter is guess:
       # Then add the letter to the display word
     #if they haven't guessed the letter
+    elif 
         #Add an underscore to the display word
 #Return the finished display word (outside of the loop)
-
+    return
 # Main game loop (While True)
     # call function to show hangman
     #print function call to show display word
@@ -59,8 +61,12 @@ print(guesses)
     if score == -6:
      
         #Tell them they lost
+        print("You lost!!")
         #Tell them what the word was
+        print(f"The word was {answer}.")
         #Increase the lost count
+        score -= 1
         #ask if they want to play again
+        print("Would you like to try again?")
 
         
