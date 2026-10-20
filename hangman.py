@@ -24,8 +24,8 @@ print(guess)
     _______
     |     |
     |     O
-    |    /|\
-    |    / \
+    |    /|\\
+    |    / \\
     |________
 """
 # Function to show the letters and spaces (The correct word, letters that have been guessed)
@@ -33,20 +33,20 @@ print(guess)
 display("")
 # Loop over the correct word
     # check if letter has been guessed
-    if guess == word:
-        guess += display
+if guess == word:
+    guess += display
       # Then add the letter to the display word
     #if they haven't guessed the letter
-    elif guess != word:
+elif guess != word:
 
         #Add an underscore to the display word
 #Return the finished display word (outside of the loop)
     return
 # Main game loop (While True)
 def stupid_proof(guess)
-    while True:
-        try:
-            guess = input("Guess a letter:"))
+while True:
+    try:
+        guess = input("Guess a letter:")
     # call function to show hangman
     #print function call to show display word
     #create variable and ask user to guess a letter
@@ -78,4 +78,3 @@ def stupid_proof(guess)
         #ask if they want to play again
         print("Would you like to try again?")
 
-        
